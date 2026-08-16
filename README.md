@@ -1,141 +1,297 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 💧 WaterSpot – AI-Based Water Quality Prediction & Analysis
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+WaterSpot is a web-based application designed to **predict and analyze water quality** using important water parameters such as pH, hardness, TDS, turbidity, and other relevant factors.
 
-## ✨ Technology Stack
-
-This scaffold provides a robust foundation built with:
-
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
-
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
-
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
-
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
-
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
-
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
-
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
-
-## 🎯 Why This Scaffold?
-
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
-
-## 🚀 Quick Start
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
-```
-
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
-
-## 🤖 Powered by Z.ai
-
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
-
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
-## 📁 Project Structure
-
-```
-src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
-
-## 🎨 Available Features & Components
-
-This scaffold includes a comprehensive set of modern web development tools:
-
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
-
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
-
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
-
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
-
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
-
-## 🤝 Get Started with Z.ai
-
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+The system helps users understand the quality of water in a particular area and provides **analysis, prediction results, and recommendations** based on the entered parameters.
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+## 📌 Project Overview
+
+Access to clean and safe water is essential for human health and the environment. Water quality can vary depending on factors such as chemical composition, pollution, and environmental conditions.
+
+**WaterSpot** provides a simple platform where users can enter water-quality parameters and obtain an estimated water-quality result.
+
+### Key objectives
+
+* Predict water quality using input parameters
+* Analyze different water-quality measurements
+* Present results through an easy-to-understand dashboard
+* Help identify potentially poor-quality water
+* Provide recommendations based on prediction results
+* Visualize water-quality data using charts and graphs
+
+---
+
+## ✨ Features
+
+### 🏠 Home
+
+* Introduction to WaterSpot
+* Overview of the water-quality prediction system
+* Easy navigation to different sections
+
+### 🔬 Water Quality Prediction
+
+Users can enter parameters such as:
+
+* pH
+* Hardness
+* Solids / TDS
+* Chloramines
+* Sulfate
+* Conductivity
+* Organic Carbon
+* Trihalomethanes
+* Turbidity
+
+The system processes the provided values and generates a water-quality prediction.
+
+### 📊 Analysis Dashboard
+
+The dashboard provides:
+
+* Prediction results
+* Parameter analysis
+* Graphical representation of water-quality data
+* Water-quality status
+* Easy-to-understand insights
+
+### 💡 Recommendations
+
+Based on the prediction and entered parameters, WaterSpot provides suggestions to help users understand potential water-quality concerns.
+
+---
+
+## 🛠️ Technology Stack
+
+### Frontend
+
+* **Next.js 15**
+* **React**
+* **TypeScript**
+* **Tailwind CSS**
+* **shadcn/ui**
+* **Lucide React**
+* **Framer Motion**
+
+### Data & Visualization
+
+* **Recharts**
+* **TanStack Table**
+* **Axios**
+
+### Backend & Database
+
+* **Next.js API**
+* **Prisma**
+* **NextAuth.js**
+* **Zod**
+
+### State Management
+
+* **Zustand**
+* **TanStack Query**
+
+---
+
+## 📂 Project Structure
+
+```text
+WaterSpot/
+│
+├── src/
+│   ├── app/
+│   │   ├── page.tsx
+│   │   ├── dashboard/
+│   │   ├── prediction/
+│   │   └── ...
+│   │
+│   ├── components/
+│   │   └── ui/
+│   │
+│   ├── hooks/
+│   │
+│   └── lib/
+│
+├── public/
+│   └── images/
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── README.md
+```
+
+---
+
+## ⚙️ Installation
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/vamsigupta1306/WaterSpot.git
+```
+
+### 2. Navigate to the project
+
+```bash
+cd WaterSpot
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+### 5. Open the application
+
+Open your browser and visit:
+
+```text
+http://localhost:3000
+```
+
+---
+
+## 🔐 Environment Variables
+
+If your project uses authentication, database, or other external services, create a `.env` file in the project root.
+
+Example:
+
+```env
+DATABASE_URL="your_database_url"
+NEXTAUTH_SECRET="your_secret"
+NEXTAUTH_URL="http://localhost:3000"
+```
+
+Do not upload your `.env` file or secret keys to GitHub.
+
+---
+
+## 🧪 How to Use
+
+### Step 1 – Open WaterSpot
+
+Launch the application using:
+
+```bash
+npm run dev
+```
+
+### Step 2 – Enter Water Parameters
+
+Enter the available water-quality values in the prediction form.
+
+### Step 3 – Submit for Prediction
+
+Click the prediction button to process the entered values.
+
+### Step 4 – View Results
+
+The application displays the predicted water-quality status.
+
+### Step 5 – Analyze the Results
+
+Use the dashboard to understand the individual parameters and their effect on water quality.
+
+### Step 6 – Follow Recommendations
+
+Review the recommendations provided by the system for potentially poor water-quality conditions.
+
+---
+
+## 🤖 Prediction System
+
+The prediction system uses water-quality parameters as input.
+
+```text
+Water Parameters
+       │
+       ▼
+Data Validation
+       │
+       ▼
+Prediction Model
+       │
+       ▼
+Water Quality Result
+       │
+       ▼
+Analysis & Visualization
+       │
+       ▼
+Recommendations
+```
+
+---
+
+## 📊 Water Quality Parameters
+
+| Parameter       | Description                                           |
+| --------------- | ----------------------------------------------------- |
+| pH              | Measures the acidity or alkalinity of water           |
+| Hardness        | Indicates the concentration of calcium and magnesium  |
+| TDS             | Represents the amount of dissolved substances         |
+| Chloramines     | Indicates disinfectant-related compounds              |
+| Sulfate         | Measures sulfate concentration                        |
+| Conductivity    | Indicates the ability of water to conduct electricity |
+| Organic Carbon  | Represents organic carbon content                     |
+| Trihalomethanes | Indicates certain disinfection by-products            |
+| Turbidity       | Measures the clarity of water                         |
+
+---
+
+## 🎯 Project Goals
+
+* Build an easy-to-use water-quality prediction platform
+* Apply machine learning to water-quality analysis
+* Provide useful visualizations
+* Help users understand water-quality conditions
+* Support data-driven water-quality monitoring
+
+---
+
+## 🚀 Future Enhancements
+
+* 📍 Location-based water-quality analysis
+* 🗺️ Interactive water-quality maps
+* 📱 Mobile application
+* 🔔 Water-quality alerts
+* 📈 Historical water-quality tracking
+* 🤖 Improved machine-learning models
+* 🌐 Real-time sensor/IoT integration
+* 📄 Automated water-quality reports
+
+---
+
+## 👨‍💻 Developed By
+
+**Y Vamsi Gupta**
+
+B.Tech – Computer Science / Cybersecurity
+
+Kalasalingam Academy of Research and Education
+
+---
+
+## 📄 License
+
+This project is developed for **educational and academic purposes**.
+
+---
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub.
